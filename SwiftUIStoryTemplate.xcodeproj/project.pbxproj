@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		021458422B065A450074F624 /* pixelmix in Resources */ = {isa = PBXBuildFile; fileRef = 021458412B065A450074F624 /* pixelmix */; };
+		021458442B065AAA0074F624 /* pixelmix.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 021458432B065AAA0074F624 /* pixelmix.ttf */; };
+		021458462B065AAF0074F624 /* pixelmix_bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 021458452B065AAF0074F624 /* pixelmix_bold.ttf */; };
+		021458482B0660D60074F624 /* BookCoverPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021458472B0660D60074F624 /* BookCoverPage.swift */; };
 		5DE6F6702AFADF05004ABB4F /* SwiftUIStoryTemplateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE6F66F2AFADF05004ABB4F /* SwiftUIStoryTemplateApp.swift */; };
 		5DE6F6722AFADF05004ABB4F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE6F6712AFADF05004ABB4F /* ContentView.swift */; };
 		5DE6F6742AFADF08004ABB4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DE6F6732AFADF08004ABB4F /* Assets.xcassets */; };
@@ -23,6 +27,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		021458402B065A300074F624 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		021458412B065A450074F624 /* pixelmix */ = {isa = PBXFileReference; lastKnownFileType = folder; name = pixelmix; path = ../../../Downloads/pixelmix; sourceTree = "<group>"; };
+		021458432B065AAA0074F624 /* pixelmix.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = pixelmix.ttf; path = ../../../Downloads/pixelmix/pixelmix.ttf; sourceTree = "<group>"; };
+		021458452B065AAF0074F624 /* pixelmix_bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = pixelmix_bold.ttf; path = ../../../Downloads/pixelmix/pixelmix_bold.ttf; sourceTree = "<group>"; };
+		021458472B0660D60074F624 /* BookCoverPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCoverPage.swift; sourceTree = "<group>"; };
 		5DE6F66C2AFADF05004ABB4F /* SwiftUIStoryTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIStoryTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DE6F66F2AFADF05004ABB4F /* SwiftUIStoryTemplateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIStoryTemplateApp.swift; sourceTree = "<group>"; };
 		5DE6F6712AFADF05004ABB4F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -69,8 +78,13 @@
 		5DE6F66E2AFADF05004ABB4F /* SwiftUIStoryTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				021458402B065A300074F624 /* Info.plist */,
 				5DE6F66F2AFADF05004ABB4F /* SwiftUIStoryTemplateApp.swift */,
 				5DE6F6712AFADF05004ABB4F /* ContentView.swift */,
+				021458472B0660D60074F624 /* BookCoverPage.swift */,
+				021458432B065AAA0074F624 /* pixelmix.ttf */,
+				021458452B065AAF0074F624 /* pixelmix_bold.ttf */,
+				021458412B065A450074F624 /* pixelmix */,
 				5DE6F6872AFAE47A004ABB4F /* Chapter1 */,
 				5DE6F6882AFAE482004ABB4F /* Chapter2 */,
 				5DE6F6892AFAE48E004ABB4F /* Chapter3 */,
@@ -192,6 +206,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				021458442B065AAA0074F624 /* pixelmix.ttf in Resources */,
+				021458422B065A450074F624 /* pixelmix in Resources */,
+				021458462B065AAF0074F624 /* pixelmix_bold.ttf in Resources */,
 				5DE6F6772AFADF08004ABB4F /* Preview Assets.xcassets in Resources */,
 				5DE6F6742AFADF08004ABB4F /* Assets.xcassets in Resources */,
 			);
@@ -205,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DE6F6822AFAE3EA004ABB4F /* Chapter3View.swift in Sources */,
+				021458482B0660D60074F624 /* BookCoverPage.swift in Sources */,
 				C917D7192B0656A5007D498C /* Chapter2Page3View.swift in Sources */,
 				C917D7172B065681007D498C /* Chapter2Page2View.swift in Sources */,
 				5DE6F6842AFAE3EF004ABB4F /* Chapter4View.swift in Sources */,
@@ -351,6 +369,8 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftUIStoryTemplate/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -380,6 +400,8 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftUIStoryTemplate/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
