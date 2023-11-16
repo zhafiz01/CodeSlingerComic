@@ -10,7 +10,7 @@ struct Chapter2Page2View: View {
     var body: some View {
         
         
-//        NavigationStack{
+        NavigationStack{
             
             ZStack {
                 
@@ -61,7 +61,7 @@ struct Chapter2Page2View: View {
             }
             
             
-//        }
+        }
         
     }
 }

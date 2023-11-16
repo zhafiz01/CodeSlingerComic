@@ -31,23 +31,23 @@ struct Chapter2Page3View: View {
                 
                 
                 
-                Image(systemName: "arrow.right.circle")
-                    .foregroundColor(.cyan)
-                    .padding(15)
+            
                 
+                NavigationLink(destination: Chapter2Page4View()){
+                    Image(systemName: "arrow.right.circle")
+                        .foregroundColor(.cyan)
+                        .padding(10)
             }
         }
         
-        //NavigationLink(destination: Chapter2Page4View()){
-        //    Image(systemName: "arrow.right.circle")
-        // .foregroundColor(.cyan)
+        
+            
+            
+        }
         
         
     }
-    
-    
 }
-                
     #Preview {
     Chapter2Page3View()
     
