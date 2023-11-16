@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "Pasted Image- Nov 13, 2023 - 10-48-28am.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
