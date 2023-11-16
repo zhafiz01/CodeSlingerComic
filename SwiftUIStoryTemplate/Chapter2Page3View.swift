@@ -11,7 +11,7 @@ import AVKit
 
 struct Chapter2Page3View: View {
     
-
+    
     var body: some View {
         
         ZStack {
@@ -20,12 +20,14 @@ struct Chapter2Page3View: View {
                 .ignoresSafeArea()
             
             
-            VStack{ VideoPlayer(player: AVPlayer(url: Bundle.main.url(forResource: "computeranimation", withExtension: "mp4")!))
+            VStack{VideoPlayer(player: AVPlayer(url: Bundle.main.url(forResource: "computeranimation", withExtension: "mp4")!))
                     .frame(width:350, height:450)
                 
                 Text("Lily...your bravery needed...Dr. Evil...AI...control humanity...beware...")
                     .foregroundStyle(.cyan)
                     .frame(width:350)
+                    .font(.custom("pixelmix", size:12))
+                
                 
                 
                 
@@ -35,25 +37,18 @@ struct Chapter2Page3View: View {
                 
             }
         }
-            
-            NavigationLink(destination: Chapter2Page4View()){
-                Image(systemName: "arrow.right.circle")
-                    .foregroundColor(.cyan)
-                    .padding(15)
-               
-                                }
-                            }
-                        }
-                    
+        
+        //NavigationLink(destination: Chapter2Page4View()){
+        //    Image(systemName: "arrow.right.circle")
+        // .foregroundColor(.cyan)
+        
+        
+    }
+    
+    
+}
                 
-                
-    
-
-    
-    
-    
-
-#Preview {
+    #Preview {
     Chapter2Page3View()
     
 }
