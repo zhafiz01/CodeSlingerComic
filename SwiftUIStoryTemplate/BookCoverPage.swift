@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+
 struct BookCoverpage: View {
     //@State private var angle: Double = 0
     var body: some View {
@@ -15,6 +16,7 @@ struct BookCoverpage: View {
         // need the navigation stack on the page before the page you want the link to take you to , or call.
         
         NavigationStack{
+            
             
             ZStack {
                 
@@ -30,7 +32,7 @@ struct BookCoverpage: View {
 //                    .padding()
 //                    .rotationEffect(.degrees(angle))
 //                    .animation(.interpolatingSpring(mass: 1, stiffness: 1, damping: 0.5, initialVelocity: 10), value: angle)
-//
+
                 
                 VStack {
                     //                Text("Code Slinger")
@@ -65,6 +67,9 @@ struct BookCoverpage: View {
                     
                 }
             }
+            
+            .navigationBarBackButtonHidden(true)
+
         }
     }
     

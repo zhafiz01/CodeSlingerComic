@@ -11,7 +11,7 @@ import SwiftUI
 struct SwiftUIStoryTemplateApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            BookCoverpage()
         }
     }
 }
