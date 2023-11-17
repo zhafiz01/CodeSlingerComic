@@ -87,7 +87,7 @@ struct ContentView: View {
             VStack{
                 
                 NavigationLink {
-                    DrEvilSwiftUIView()
+                    EnterByteville()
                 } label: {
                     
                     

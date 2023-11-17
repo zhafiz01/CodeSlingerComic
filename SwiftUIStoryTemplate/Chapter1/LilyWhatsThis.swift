@@ -1,13 +1,13 @@
 //
-//  DrEvilSwiftUIView.swift
+//  LilyWhatsThis.swift
 //  SwiftUIStoryTemplate
 //
-//  Created by Zeeshan Hafiz on 11/14/23.
+//  Created by Zeeshan Hafiz on 11/16/23.
 //
 
 import SwiftUI
 
-struct DrEvilSwiftUIView: View {
+struct LilyWhatsThis: View {
     @State private var displayedText: String = ""
 
     func printSlow(phrase: String, speed: TimeInterval = 0.03) {
@@ -24,11 +24,10 @@ struct DrEvilSwiftUIView: View {
                 Color.black
                     .ignoresSafeArea()
                 VStack {
-                    Image("DrEvil")
+                    Image("WhatsThis2")
                         .resizable()
                         .frame(width: 350, height: 350)
                         .scaledToFit()
-                        .padding()
                         .padding()
 
                     ScrollView {
@@ -38,10 +37,10 @@ struct DrEvilSwiftUIView: View {
                             .padding()
                     }
 
-                    Button("Begin Dr Evil's Evil Plan") {
+                    Button("What Is It?!") {
                         withAnimation {
                             displayedText = ""
-                            printSlow(phrase: "Our story then cuts to Dr. Evil, a man who is both imposing and cunning.  Dr. Evil is the CEO of Innovatech Corporation which develops AI technology.  As Dr. Evil has his eyes fixed on Byteville he smirks and aggresively states, “The world will soon bow down before my creation!  Aetheris will revolutionize everything and help me begin my plan for world domination!”  His voice was laced with evil intentions as it resonated throughout the room.")
+                            printSlow(phrase: "Back in the confines of Lily's workstation, her eyes widened as she stumbled upon a peculiar line of code buried deep within the system. Intrigued, Lily whispered, 'What's this?' As her curiosity piqued, she clicked on the mysterious code, unleashing a cascade of strange symbols and algorithms that pulsated on her screen as if it was attempting to communicate with her.")
                         }
                     }
                     .foregroundColor(.white)
@@ -49,7 +48,7 @@ struct DrEvilSwiftUIView: View {
                     .background(RoundedRectangle(cornerRadius: 10).foregroundColor(.cyan))
                     .padding()
 
-                    NavigationLink(destination: DrEvilMrSmith()) {
+                    NavigationLink(destination: LilyBeware()) {
                         Text("Next Page -->")
                             .foregroundColor(.white)
                             .padding()
@@ -63,12 +62,14 @@ struct DrEvilSwiftUIView: View {
     }
 }
 
-struct DrEvilSwift: View {
-    var body: some View {
-        Text("This is the next view")
-            .foregroundColor(.white)
-    }
-}
+//// Use this for preview
+//struct LilyWhatsThis_Previews: PreviewProvider {
+//    static var previews: some View {
+//        LilyWhatsThis()
+//    }
+//}
+
+
 #Preview {
-    DrEvilSwiftUIView()
+    LilyWhatsThis()
 }

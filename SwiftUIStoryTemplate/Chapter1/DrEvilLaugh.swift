@@ -1,13 +1,13 @@
 //
-//  DrEvilSwiftUIView.swift
+//  DrEvilLaugh.swift
 //  SwiftUIStoryTemplate
 //
-//  Created by Zeeshan Hafiz on 11/14/23.
+//  Created by Zeeshan Hafiz on 11/16/23.
 //
 
 import SwiftUI
 
-struct DrEvilSwiftUIView: View {
+struct DrEvilLaugh: View {
     @State private var displayedText: String = ""
 
     func printSlow(phrase: String, speed: TimeInterval = 0.03) {
@@ -24,10 +24,12 @@ struct DrEvilSwiftUIView: View {
                 Color.black
                     .ignoresSafeArea()
                 VStack {
-                    Image("DrEvil")
+                    Image("EvilLaugh")
                         .resizable()
-                        .frame(width: 350, height: 350)
                         .scaledToFit()
+                        .frame(width: 450, height: 450)
+                        .padding(EdgeInsets(top: 20, leading: 20, bottom: 20, trailing: 20))
+                        .padding()
                         .padding()
                         .padding()
 
@@ -38,18 +40,7 @@ struct DrEvilSwiftUIView: View {
                             .padding()
                     }
 
-                    Button("Begin Dr Evil's Evil Plan") {
-                        withAnimation {
-                            displayedText = ""
-                            printSlow(phrase: "Our story then cuts to Dr. Evil, a man who is both imposing and cunning.  Dr. Evil is the CEO of Innovatech Corporation which develops AI technology.  As Dr. Evil has his eyes fixed on Byteville he smirks and aggresively states, “The world will soon bow down before my creation!  Aetheris will revolutionize everything and help me begin my plan for world domination!”  His voice was laced with evil intentions as it resonated throughout the room.")
-                        }
-                    }
-                    .foregroundColor(.white)
-                    .padding()
-                    .background(RoundedRectangle(cornerRadius: 10).foregroundColor(.cyan))
-                    .padding()
-
-                    NavigationLink(destination: DrEvilMrSmith()) {
+                    NavigationLink(destination: LilyWhatsThis()) {
                         Text("Next Page -->")
                             .foregroundColor(.white)
                             .padding()
@@ -63,12 +54,13 @@ struct DrEvilSwiftUIView: View {
     }
 }
 
-struct DrEvilSwift: View {
-    var body: some View {
-        Text("This is the next view")
-            .foregroundColor(.white)
+// Use this for preview
+struct DrEvilLaugh_Previews: PreviewProvider {
+    static var previews: some View {
+        DrEvilLaugh()
     }
 }
+
 #Preview {
-    DrEvilSwiftUIView()
+    DrEvilLaugh()
 }
