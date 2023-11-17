@@ -24,40 +24,41 @@ struct DrEvilSwiftUIView: View {
                 Color.black
                     .ignoresSafeArea()
                 VStack {
-//                    Text("Chapter 1: The Quiet Coder")
-//                        .foregroundColor(.cyan)
-
                     Image("DrEvil")
                         .resizable()
+                        .frame(width: 350, height: 350)
                         .scaledToFit()
                         .padding()
                         .padding()
-                        .aspectRatio(contentMode: .fit)
 
                     ScrollView {
                         Text(displayedText)
                             .foregroundColor(.cyan)
+                            .font(.system(size: 18, weight: .regular, design: .default))
                             .padding()
                     }
 
                     Button("Begin Dr Evil's Evil Plan") {
-                        displayedText = ""
-                        printSlow(phrase: "Our story then cuts to Dr. Evil, a man who is 50 that is both imposing and cunning.  Dr. Evil is the CEO of Innovatech Corporation which develops AI tech.  As Dr. Evil has his eyes fixed on Byteville he smirks and aggresively states, “The world will soon bow down before my creation!  Aetheris will revolutionize everything and help me begin my plan for world domination!”  His voice was laced with evil intentions as it resonated throughout the room. ")
+                        withAnimation {
+                            displayedText = ""
+                            printSlow(phrase: "Our story then cuts to Dr. Evil, a man who is both imposing and cunning.  Dr. Evil is the CEO of Innovatech Corporation which develops AI technology.  As Dr. Evil has his eyes fixed on Byteville he smirks and aggresively states, “The world will soon bow down before my creation!  Aetheris will revolutionize everything and help me begin my plan for world domination!”  His voice was laced with evil intentions as it resonated throughout the room.")
+                        }
                     }
-                    .foregroundColor(.cyan)
-                    .background(Color.white)
-                    .clipShape(RoundedRectangle(cornerRadius: 3))
+                    .foregroundColor(.white)
+                    .padding()
+                    .background(RoundedRectangle(cornerRadius: 10).foregroundColor(.cyan))
                     .padding()
 
                     NavigationLink(destination: DrEvilMrSmith()) {
-                        Text("Go to Next Page")
+                        Text("Next Page -->")
+                            .foregroundColor(.white)
+                            .padding()
+                            .background(RoundedRectangle(cornerRadius: 10).foregroundColor(.cyan))
+                            .padding()
                     }
-                    .foregroundColor(.cyan)
-                    .background(Color.white)
-                    .clipShape(RoundedRectangle(cornerRadius: 3))
                 }
             }
-            .navigationBarHidden(true) // Hide the navigation bar
+            .navigationBarHidden(true)
         }
     }
 }
